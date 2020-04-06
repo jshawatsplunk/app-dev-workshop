@@ -64,17 +64,17 @@ By default the system offers you the ability to set up a general notification ru
 Note the Email all members, This mean all members of this team will receive an email with the Alert information, regardless of the alert type.
 You can add other recipients, by  clicking ![add recipient](../images/M1-l7-19.jpg)
 
-You can add a different email addresses to inform people outside SignalFx users like
- _alerts@your-company.com_ if that is way to inform people outside SignalFx. AAdding groups you would use when you also want to send an alert to an other team, like sending an alert on the Database of your application to the  general Database team along with one to your team.
+You can add different email addresses to inform people outside SignalFx users like
+ _alerts@your-company.com_ if that is the way to inform people outside SignalFx. Adding groups you would use when you also want to send an alert to an other team, like sending an alert on the Database of your application to the  general Database team along with one to your team.
    
 However if you click on the link **Configure separate notification tiers for different severity alerts** you can configure every alert level differently.
 
 ![Multiple Notifications](../images/M1-l7-10.jpg)
 
-As you can see in th above screenshot, you can set up different alert rules for the different alert level.
-We have different rules set up for all the various Error levels, Showing you how Splunk's VictorOps offering would integrate with SignalFx.
+As you can see in the above screenshot, you can set up different alert rules for the different alert level.
+We have different rules set up for all the various Error levels, showing you how Splunk's VictorOps offering would integrate with SignalFx.
 Both at a Critical and Major alert, the alert gets forwarded to Splunk's VictorOps that will handle alerting the on call engineer and/or manager.
-For the Minor alerts we send it to the Teams slack channel and for warning and info messages we just use an email
+For the Minor alerts we send it to the Teams slack channel and for warning and info messages we just use an email.
 
 Below you see some of the Notification options you can install in your SignalFx Organization:
 
@@ -85,7 +85,7 @@ Take a moment to create some notification rules for you Team.
 ---
 
 ### 4. Controlling a Team's usage!
-If you wish to make sure certain teams or users cannot use more then a certain allotment of you overall  allotment of nodes, containers and Metrics' you can create multiple Access keys.
+If you wish to make sure certain teams or users cannot use more then a certain allotment of your overall allotment of nodes, containers and Metrics' you can create multiple Access keys.
 
   
 To work with SignalFx's Access Tokens UI click on the settings ![gray user icon](../images/M1-l7-2.jpg) ) icon on the right top of the page and select the **Organizations Settings → Access tokens** tab, or select the **Access Tokens** tab from the left pane.
@@ -103,7 +103,7 @@ The **Usage Status** Column shows if a token is used above or below its assigned
 
 ***
 
-Let create a new token by clicking on  the ![new token button](../images/M1-l7-22.jpg) button.
+Let's create a new token by clicking on  the ![new token button](../images/M1-l7-22.jpg) button.
 This will provide you with the **Name Your Access Token** dialog.
 Enter the new name of the new Token  by using your Initials  ie. PH-Token
 
@@ -121,9 +121,9 @@ If you made a type you can use the Rename Token option to correct the name of yo
 
 ***
 
-If you need to make sure a token  cannot be used a to send Metrics in you can Disable a token.
+If you need to make sure a token  cannot be used to send Metrics in you can Disable a token.
 Click on the Disable button to Disable the token, this means the token cannot be used for sending in data to SignalFX.  
-The line with Your Token should turn greyed out to indicate that is been Disabled as you can see in the screenshot below.
+The line with Your Token should turn greyed out to indicate that has been Disabled as you can see in the screenshot below.
 
 
 ![Token disabled](../images/M1-l7-26.jpg)
@@ -132,7 +132,7 @@ Go ahead and click on the 3 **...** menu button to Disable and Enable your token
 
 ***
 
-Now Lets start limiting usage by clicking on Manage Token Limit in teh 3 **...** menu.
+Now Let's start limiting usage by clicking on Manage Token Limit in teh 3 **...** menu.
 This will show the Manage Token Limit Dialog: 
 
 ![Set Limits on token](../images/M1-l7-12.jpg)
@@ -147,7 +147,7 @@ Token limits are used to trigger an alert that notify one or more recipients whe
 Click on **Update** to save your Access Tokens limits and The Alert Settings.
 
 !!! Note
-    When a token is at or above its limit in a usage category, new metrics for that usage category will not be stored and processed by SignalFx. This will make sure you there  will be no unexpected cost due to a team sending in data without restriction.
+    When a token is at or above its limit in a usage category, new metrics for that usage category will not be stored and processed by SignalFx. This will make sure there will be no unexpected cost due to a team sending in data without restriction.
 
 
 In your company you would distribute these new Access Tokens to various teams, controlling how much information/data they can send to SignalFx. This will allow you to fine tune the way you consume your SignalFx allotment and stop expensive surprises from happening
